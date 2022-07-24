@@ -1,0 +1,28 @@
+{
+  "name": "assessment-backend-xp/framework",
+  "type": "project",
+  "description": " Desafio Webjump",
+  "keywords": [
+    "framework",
+    "webjump"
+  ],
+  "require": {
+    "phpmailer/phpmailer": "~6.0",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "config": {
+    "vendor-lib": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "./"
+    },
+    "files": [
+      "./lib/HelperService.php"
+    ]
+  },
+  "minimum-stability": "stable",
+  "scripts": {
+    "serve": "php -S localhost:8000"
+  }
+}
